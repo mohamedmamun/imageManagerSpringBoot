@@ -15,7 +15,7 @@ public class ImageService {
     public void uploadImage(MultipartFile file){
         try {
             byte [] data = file.getBytes();
-            Path path = Paths.get("C:/Users/mohamed.mamun/Documents/imagemanager", file.getOriginalFilename());
+            Path path = Paths.get("C:\\Users\\mohamed.mamun\\Documents\\imagemanager", file.getOriginalFilename());
             Files.write(path,data);
         } catch (IOException e) {
             e.printStackTrace();
